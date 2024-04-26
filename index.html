@@ -3,121 +3,424 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YELP</title>
+    <title>Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp</title>
+    <link rel="shortcut icon"
+        href="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/dcfe403147fc/assets/img/logos/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./resource/logo.png" type="image/x-icon">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 </head>
 
 <body>
-    <nav class="container">
-        <div class="nav_main border dflex">
-            <img class="border" src="resource/logo.png" height="30px" alt="">
-            <div class="search_main border dflex">
-                <input type="text" placeholder=" tacos, cheap dinner, Max's ">
-                <i class="fi fi-ts-tally-1"></i>
-                <input type="text" placeholder="address, neighborhood, city, state or zip">
-                <button><i class="fi fi-rs-search"></i></button>
+    <div class="hero">
+        <nav>
+            <div class="nav_main border dflex">
+                <img class="border" src="/Resources/logo.png" height="30px" alt="">
+                <div class="search_main border dflex">
+                    <input type="text" placeholder=" tacos, cheap dinner, Max's ">
+                    <i class="fi fi-ts-tally-1"></i>
+                    <input type="text" placeholder="address, neighborhood, city, state or zip">
+                    <button><i class="fi fi-rs-search"></i></button>
+                </div>
+                <button class="commerical btn">
+                    Yelp for Business <i class="fi fi-rs-angle-small-down"></i>
+                </button>
+                <button class="review btn">
+                    Write a Review
+                </button>
+                <div class="register dflex">
+                    <button class="login btn">Log In</button>
+                    <button class="signup btn">Sign Up</button>
+                </div>
             </div>
-            <button class="commerical btn">
-                Yelp for Business <i class="fi fi-rs-angle-small-down"></i>
-            </button>
-            <button class="review btn">
-                Write a Review
-            </button>
-            <div class="register dflex">
-                <button class="login btn">Log In</button>
-                <button class="signup btn">Sign Up</button>
+            <div class="navbottom">
+                <button class="bottom">Restaurants<i class="fi fi-rs-angle-small-down"></i></button>
+                <button class="bottom">Home Services<i class="fi fi-rs-angle-small-down"></i></button>
+                <button class="bottom">Auto Services<i class="fi fi-rs-angle-small-down"></i></button>
+                <button class="bottom">More<i class="fi fi-rs-angle-small-down"></i></button>
             </div>
-        </div>
-        
-        <div class="dd dflex"></div>
-        <button> Resource</button>
-        <button>Home Services</button>
-        <button>Auto Services</button>
-        <button>More</button>
-        
-    </nav>
+        </nav>
+    </div>
+    <section class="recent_activity">
+        <h2>Recent Activity</h2>
+        <div class="card-container border dflex">
+            <div class="card border card1">
+                <div class="heading dflex">
+                    <div class="icon1">
+                    </div>
+                    <div class="name">
+                        <a href="#">Brett S.</a>
+                        <div class="description"> Added 3 photos
+                        </div>
+                    </div>
+                </div>
+                <a href="#">Napa Valley Burger Company</a>
+                <div class="review_1 dflex">
+                    <div class="first_review first_review_1">
+                        <a href="#">
+                            <img src="./Resources/Recent_Activity/first_review_1.jpeg" alt="">
+                        </a>
+                       <div class="like">
+                                <i class="fi fi-rs-social-network"></i>
+                        </div>
+                    </div>
+                    <div class="first_review first_review_2">
+                        <a href="#">
+                            <img src="./Resources/Recent_Activity/first_review_2.jpeg" alt="">
+                        </a>
+                        <div class="like">
+                                <i class="fi fi-rs-social-network"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a href="#">Show all 3 photos</a>
+                </div>
+            </div>
+            <div class="card border card2">
+                <div class="heading dflex">
+                    <div class="icon2">
+                    </div>
+                    <div class="name">
+                        <a href="#">Danice M.</a>
+                        <div class="description"> Wrote a review
+                        </div>
+                    </div>
+                </div>
+                <div class="image1"></div>
+                <div class="review_2">
+                    <a href="#">The Clubhouse at the Presidio Golf Course</a>
+                    <div class="rating">
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                    </div>
+                    <p>The best good food... Service everything made it a perfect day. Definitely will come here again.
+                    </p>
+                    <div class="emojis dflex">
+                        <i class="fi fi-rs-bulb"></i>
+                        <i class="fi fi-rs-laugh"></i>
+                        <i class="fi fi-rs-face-sunglasses"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card border card3">
+                <div class="heading dflex">
+                    <div class="icon2">
+                    </div>
+                    <div class="name">
+                        <a href="#">Danice M.</a>
+                        <div class="description"> Wrote a review
+                        </div>
+                    </div>
+                </div>
+                <div class="image2"></div>
+                <div class="review_2">
+                    <a href="#">Presidio Community YMCA</a>
+                    <div class="rating">
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                    </div>
+                    <p>Love this location. Also love the Richmond location. Our classmates watch out for each other and
+                        the instructors are super good.
+                    </p>
+                    <div class="emojis dflex">
+                        <i class="fi fi-rs-bulb"></i>
+                        <i class="fi fi-rs-laugh"></i>
+                        <i class="fi fi-rs-face-sunglasses"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card border card1">
+                <div class="heading dflex">
+                    <div class="icon4">
+                    </div>
+                    <div class="name">
+                        <a href="#">Simon C.</a>
+                        <div class="description"> Added 2 photos
+                        </div>
+                    </div>
+                </div>
+                <a href="#">Tartine Bakery</a>
+                <div class="review_1 dflex">
+                    <div class="first_review first_review_1">
+                        <a href="#">
+                            <img src="./Resources/Recent_Activity/fourth_review_1.jpeg" alt="">
+                        </a>
+                       <div class="like">
+                                <i class="fi fi-rs-social-network"></i>
+                        </div>
+                    </div>
+                    <div class="first_review first_review_2">
+                        <a href="#">
+                            <img src="./Resources/Recent_Activity/fourth_review_2.jpeg" alt="">
+                        </a>
+                       <div class="like">
+                                <i class="fi fi-rs-social-network"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border card5">
+                <div class="heading dflex">
+                    <div class="icon4">
+                    </div>
+                    <div class="name">
+                        <a href="#">Simon C.</a>
+                        <div class="description"> Wrote a review
+                        </div>
+                    </div>
+                </div>
+                <div class="image3"></div>
+                <div class="review_2">
+                    <a href="#">Presidio Community YMCA</a>
+                    <div class="rating">
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                    </div>
+                    <p>Love this location. Also love the Richmond location. Our classmates watch out for each other and
+                        the instructors are super good.
+                    </p>
+                    <div class="emojis dflex">
+                        <i class="fi fi-rs-bulb"></i>
+                        <i class="fi fi-rs-laugh"></i>
+                        <i class="fi fi-rs-face-sunglasses"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card border card6">
+                <div class="heading dflex">
+                    <div class="icon6">
+                    </div>
+                    <div class="name">
+                        <a href="#">Bob H.</a>
+                        <div class="description"> Wrote a review
+                        </div>
+                    </div>
+                </div>
+                <div class="image4"></div>
+                <div class="review_2">
+                    <a href="#">Ocean Ale House</a>
+                    <div class="rating">
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                    </div>
+                    <p>Great spot for music, burgers, fries, and did I mention a selection of great beers and ales. W...
+                        <a href="#">Continue Reading</a>
+                    </p>
+                    <div class="emojis dflex">
+                        <i class="fi fi-rs-bulb"></i>
+                        <i class="fi fi-rs-laugh"></i>
+                        <i class="fi fi-rs-face-sunglasses"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card border card7">
+                <div class="heading dflex">
+                    <div class="icon7">
+                    </div>
+                    <div class="name">
+                        <a href="#">Shelly H.</a>
+                        <div class="description"> Added 1 photo
+                        </div>
+                    </div>
+                </div>
+                <div class="img_name">
+                    <a href="#">Oceanview Diner</a>
+                </div>
+                <img src="./Resources/Recent_Activity/seventh_review.jpeg" alt="">
+                <div class="like">
+                    <i class="fi fi-rs-social-network"></i>
+                    <span>2 Likes</span>
+                </div>
+            </div>
+            <div class="card border card1">
+                <div class="heading dflex">
+                    <div class="icon6">
+                    </div>
+                    <div class="name">
+                        <a href="#">Bob H.</a>
+                        <div class="description"> Added 4 photos
+                        </div>
+                    </div>
+                </div>
+                <a href="#">MoMo's</a>
+                <div class="review_1 dflex">
+                    <div class="first_review first_review_1">
+                        <a href="#">
+                            <img src="./Resources/Recent_Activity/eight_review_1.jpeg" alt="">
+                        </a>
+                       <div class="like">
+                                <i class="fi fi-rs-social-network"></i>
+                        </div>
+                    </div>
+                    <div class="first_review first_review_2">
+                        <a href="#">
+                            <img src="./Resources/Recent_Activity/eight_review_2.jpeg" alt="">
+                        </a>
+                       <div class="like dflex">
+                                <i class="fi fi-rs-social-network"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a href="#">Show all 4 photos</a>
+                </div>
+            </div>
+            <div class="card border card9">
+                <div class="heading dflex">
+                    <div class="icon6">
+                    </div>
+                    <div class="name">
+                        <a href="#">Bob H.</a>
+                        <div class="description"> Wrote a review
+                        </div>
+                    </div>
+                </div>
+                <div class="image5"></div>
+                <div class="review_2">
+                    <a href="#">MoMo's</a>
+                    <div class="rating">
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                        <i class="fi fi-tr-square-star"></i>
+                    </div>
+                    <p>The food was spot on and the servers impeccable. Starting with Gil who tended the .....
+                        <a href="#">Continue Reading</a>
+                    </p>
 
-    <h1 class="section_name">Recent Acitivity</h1>
-    <div class="card_container">
-        <div class="card card1"></div>
-        <div class="card card2"></div>
-        <div class="card card3"></div>
-        <div class="card card4"></div>
-        <div class="card card5"></div>    
-        <div class="card card6"></div>
-        <div class="card card7"></div>
-        <div class="card card8"></div>
-        <div class="card card9"></div>
-    </div>
-    <h1 class="section_name">Categories</h1>
-    <div class="categories">
-        <div class="cat cat1">Restaurant</div>
-        <div class="cat cat2">Shopping</div>
-        <div class="cat cat3">Nightlife</div>
-        <div class="cat cat4">Active Life</div>
-        <div class="cat cat5">Beauty & Spa</div>
-        <div class="cat cat6">Automotive</div>
-        <div class="cat cat7">
-            <div class="cat_img7">
-            <p>Home Services</p>
+                    <div class="emojis dflex">
+                        <i class="fi fi-rs-bulb"></i>
+                        <i class="fi fi-rs-laugh"></i>
+                        <i class="fi fi-rs-face-sunglasses"></i>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="cat cat8">More</div>
-    </div>
+        <div class="more_activity">
+            <a href="#"><i class="fi fi-rs-angle-small-down"></i> Show more activity</a>
+        </div>
+    </section>
+    <!-- <hr style="opacity: 0.5; margin-top: 50px;"> -->
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="grid-container dflex">
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/restaurant.svg">
+                Restaurant
+            </a>
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/shopping.svg">
+                Shopping
+            </a>
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/night_life.svg">
+                Night Life
+            </a>
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/active_life.svg">
+                Active Life
+            </a>
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/beauty.svg">
+                Beauty & Spas
+            </a>
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/automotive.svg">
+                Automotive
+            </a>
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/home_services.svg">
+                Home Services
+            </a>
+            <a href="#" class="grid border dflex">
+                <img src="./Resources/Categories/more.svg">
+                More
+            </a>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer_container dflex">
+            <div class="about">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="">About Yelp</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Trust & Safety</a></li>
+                    <li><a href="">Content Guidelines</a></li>
+                    <li> <a href="">Accessibility Statement</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Ad Choices</a></li>
+                    <li><a href="">Your Privacy Choices</a></li>
+                </ul>
+            </div>
+            <div class="discover">
+                <h2>Discover</h2>
+                <ul>
+                    <li><a href="">Yelp Project Cost Guides</a></li>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">Talk</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Yelp Blog</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href=""> Yelp Mobile</a></li>
+                    <li><a href="">Developers</a></li>
+                    <li><a href="">RSS</a></li>
+                </ul>
+            </div>
+            <div class="yelp_for_business">
+                <h2>Yelp for Business</h2>
+                <ul>
+                    <li><a href="">Yelp for Business</a></li>
+                    <li><a href="">Business Owner Login</a></li>
+                    <li><a href="">Claim your Business Page</a></li>
+                    <li><a href="">Advertise on Yelp</a></li>
+                    <li><a href="">Yelp for Restaurant Owners</a></li>
+                    <li><a href="">Table Management</a></li>
+                    <li><a href="">Business Success Stories</a></li>
+                    <li><a href="">Business Support</a></li>
+                    <li><a href="">Yelp Blog for Business</a></li>
+                </ul>
+            </div>
+            <div class="fourth-col">
+                <div class="fourth-col-1">
+                    <div class="languages">
+                        Languages
+                    </div>
+                    <a href="">English <i class="fi fi-rs-angle-small-down"></i></a>
+                </div>
+                <div class="fourtg-col-2">
+                    <div class="languages">
+                        Countries
+                    </div>
+                    <a href="">United States <i class="fi fi-rs-angle-small-down"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2004–2023 Yelp Inc. Yelp, <img class="logo_desktop" src="./Resources/logo_desktop.svg" alt="" width="38px" height="19px"> , <img class="burst" src="./Resources/burst_red.svg" alt=""> and related marks are registered trademarks of Yelp.</p>
+        </div>
+    </footer>
 </body>
-
-<footer>
-    <div class="footer">
-        <div class="section section1">
-            <h2>About</h2>
-            <p>About Yelp</p>
-            <p>Career</p>
-            <p>Press</p>
-            <p>Invester Relation</p>
-            <p>Trust & Safety</p>
-            <p>Content Guidlines</p>
-            <p>Accessibility Statement</p>
-            <p>Terms of Service</p>
-            <p>Privacy Policy</p>
-            <p>Ad Choices</p>
-            <p>Your Privacy Choice</p>
-        
-        </div>
-        <div class="section section2">
-            <h2>Discover</h2>
-            <p>Yelp Project Cost Guides</p>
-            <p>Collections</p>
-            <p>Talk</p>
-            <p>Events</p>
-            <p>Yelp Blog </p>
-            <p>Support</p>
-            <p>Yelp Mobile</p>
-            <p>Developers</p>
-            <p>RSS</p>
-        </div>
-        <div class="section section3">
-            <h2>Yelp for Business</h2>
-            <p>Yelp for Business</p>
-            <p>Business Owner Login</p>
-            <p>Claim your Business Page</p>
-            <p>Advertise on Yelp</p>
-            <p>Yelp for Restaurant Owners</p>
-            <p>Table Management</p>
-            <p>Business Success Stories</p>
-            <p>Business Support</p>
-            <p>Yelp Blog for Business</p>
-        </div>
-        <div class="section section4">
-            <h2>Languages</h2>
-            <p>English</p>
-            <h2>Countries</h2>
-            <p>United States</p>
-        </div>
-        <!-- <p> &copy;Copyright © 2004–2023 Yelp Inc. Yelp, Yelp logo, Yelp burst and related marks are registered trademarks of Yelp. </p> -->
-    </div>
-</footer>
 
 </html>
